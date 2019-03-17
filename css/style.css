@@ -18,3 +18,24 @@ body {
   box-sizing: border-box;
   overflow-x: hidden;
 }
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr [center-start] repeat(8, minmax(min-content, 15rem)) [center-end] 1fr;
+  grid-template-rows: 90vh;
+}
+
+/* Header */
+
+.background {
+  background-image: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), url(../img/background.webp);
+  background-size: cover;
+  background-position: center;
+  grid-column: 1 / -1;
+}
+
+.header {
+  margin: 0 auto;
+  max-width: 120rem;
+}
+
