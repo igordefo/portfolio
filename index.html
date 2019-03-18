@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
   <title>Igor Posunko</title>
 </head>
@@ -12,8 +12,8 @@
   <div class="container">
     <div class="background">
       <header class="header">
-        <a class="logo">ID</a>
         <nav class="navigation">
+          <a class="logo" href="index.html"></a>
           <ul class="navihation__list">
             <li class="navigation__item">
               <a href="#" class="navigation__link">My projects</a>
@@ -27,23 +27,71 @@
           </ul>
         </nav>
         <div class="hero">
-          <img class="hero__avatar" src="img/avatar.jpg" alt="My photo" width="200" height="200">
-          <h1 class="primary-heading">Igor Posunko</h1>
-          <p class="hero__description">Junior Web Developer</p>
+          <img class="hero__avatar mb-md" src="img/avatar.jpg" alt="My photo" width="180" height="180">
+          <h1 class="primary-heading mb-sm">Igor Posunko</h1>
+          <p class="hero__description mb-sm">Junior Web Developer</p>
           <ul class="socials">
             <li class="social__item">
-              <a class="socials__link" href="https://twitter.com/igorposunko">Twitter</a>
+              <a class="socials__link" href="https://twitter.com/igorposunko">
+                <svg class="social__icon">
+                  <use xlink:href="img/sprite.svg#icon-twitter"></use>
+                </svg>
+              </a>
             </li>
             <li class="social__item">
-              <a class="socials__link" href="https://github.com/igordefo">Github</a>
+              <a class="socials__link" href="https://github.com/igordefo">
+                <svg class="social__icon">
+                  <use xlink:href="img/sprite.svg#icon-github"></use>
+                </svg>
+              </a>
             </li>
             <li class="social__item">
-              <a class="socials__link" href="https://codepen.io/igordefo/">Codepen</a>
+              <a class="socials__link" href="https://codepen.io/igordefo/">
+                <svg class="social__icon">
+                  <use xlink:href="img/sprite.svg#icon-codepen"></use>
+                </svg>
+              </a>
             </li>
           </ul>
         </div>
+        <a href="#portfolio" class="btn">Check my projects</a>
       </header>
     </div>
+    <section class="stack">
+      <svg class="stack__icon">
+        <use xlink:href="img/stack.svg#icon-html5"></use>
+      </svg>
+      <svg class="stack__icon">
+        <use xlink:href="img/stack.svg#icon-css3"></use>
+      </svg>
+      <svg class="stack__icon">
+        <use xlink:href="img/stack.svg#icon-sass"></use>
+      </svg>
+      <svg class="stack__icon">
+        <use xlink:href="img/stack.svg#icon-boot"></use>
+      </svg>
+      <svg class="stack__icon">
+        <use xlink:href="img/stack.svg#icon-js"></use>
+      </svg>
+      <svg class="stack__icon">
+        <use xlink:href="img/stack.svg#icon-jquery"></use>
+      </svg>
+      <svg class="stack__icon">
+        <use xlink:href="img/stack.svg#icon-gulp"></use>
+      </svg>
+      <svg class="stack__icon">
+        <use xlink:href="img/stack.svg#icon-npm"></use>
+      </svg>
+      <svg class="stack__icon">
+        <use xlink:href="img/stack.svg#icon-git"></use>
+      </svg>
+      <svg class="stack__icon">
+        <use xlink:href="img/stack.svg#icon-github"></use>
+      </svg>
+      <svg class="stack__icon">
+        <use xlink:href="img/stack.svg#icon-vscode"></use>
+      </svg>
+    </section>
   </div>
 </body>
 </html>
