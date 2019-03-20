@@ -204,6 +204,7 @@ body {
   background-color: var(--primary-color);
   color: #fff;
   transform: translateX(100%);
+  transform-origin: right;
   transition-duration: .5s;
   transition-property: transform;
   position: fixed;
