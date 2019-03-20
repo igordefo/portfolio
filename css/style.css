@@ -38,7 +38,7 @@ body {
 .container {
   display: grid;
   grid-template-columns: 1fr [center-start] repeat(8, minmax(min-content, 15rem)) [center-end] 1fr;
-  grid-template-rows: 100vh;
+  grid-template-rows: 95vh;
 }
 
 /* Header */
@@ -50,12 +50,11 @@ body {
 .hero-wrap-bg {
   background-image: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), url(../img/background.webp);
   background-size: cover;
-  background-position: center;
   animation-delay: .5s;
   animation-duration: 2s;
   animation-fill-mode: both;
   animation-name: fadeInOpacity;
-  background-position: center;
+  background-position: bottom;
   background-size: cover;
   bottom: 0;
   left: 0;
@@ -208,6 +207,7 @@ body {
   transition-duration: .5s;
   transition-property: transform;
   position: fixed;
+  opacity: 0;
   z-index: 200;
 }
 
@@ -238,6 +238,7 @@ body {
 }
 
 .mobile-nav__checkbox:checked ~ .mobile-nav__nav {
+  opacity: 1;
   transform: translateX(0%);
 }
 
