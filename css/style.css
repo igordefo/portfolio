@@ -103,7 +103,7 @@ body {
 
   display: grid;
   grid-auto-rows: min-content 7fr 2fr;
-  height: 100vh;
+  height: 95vh;
 }
 
 
