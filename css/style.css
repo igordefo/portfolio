@@ -44,10 +44,57 @@ body {
 /* Header */
 
 .background {
+  grid-column: 1 / -1;
+  grid-row: 1 / span 1;
+}
+.hero-wrap-bg {
   background-image: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), url(../img/background.webp);
   background-size: cover;
   background-position: center;
+  animation-delay: .5s;
+  animation-duration: 2s;
+  animation-fill-mode: both;
+  animation-name: fadeInOpacity;
+  background-position: center;
+  background-size: cover;
+  bottom: 5vh;
+  left: 0;
+  opacity: .15;
+  position: absolute;
+  right: 0;
+  top: 0;
   grid-column: 1 / -1;
+  grid-row: 1 / span 1;
+  z-index: -1;
+}
+
+@keyframes fadeInOpacity {
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+  }
+}
+
+.fadeInDown {
+  animation-duration: .7s;
+  animation-fill-mode: both;
+  animation-name: fadeInDown;
+  animation-delay: 1s;
+}
+
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-20px);
+    transform: translateY(-20px);
+  }
+  100% {
+      opacity: 1;
+      -webkit-transform: translateY(0);
+      transform: translateY(0);
+  }
 }
 
 .header {
