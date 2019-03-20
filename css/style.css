@@ -56,7 +56,7 @@ body {
   animation-name: fadeInOpacity;
   background-position: bottom;
   background-size: cover;
-  bottom: 0vh;
+  bottom: -5vh;
   left: 0;
   opacity: .15;
   position: absolute;
