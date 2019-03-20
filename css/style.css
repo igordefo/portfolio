@@ -38,7 +38,7 @@ body {
 .container {
   display: grid;
   grid-template-columns: 1fr [center-start] repeat(8, minmax(min-content, 15rem)) [center-end] 1fr;
-  grid-template-rows: 95vh;
+  grid-template-rows: 100vh;
 }
 
 /* Header */
@@ -57,7 +57,7 @@ body {
   animation-name: fadeInOpacity;
   background-position: center;
   background-size: cover;
-  bottom: 5vh;
+  bottom: 0;
   left: 0;
   opacity: .15;
   position: absolute;
@@ -103,8 +103,8 @@ body {
   max-width: 120rem;
 
   display: grid;
-  grid-auto-rows: min-content 10fr 2fr;
-  height: 95vh;
+  grid-auto-rows: min-content 7fr 2fr;
+  height: 100vh;
 }
 
 
