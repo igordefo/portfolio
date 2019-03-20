@@ -160,6 +160,90 @@ body {
   transform: scaleX(1);
 }
 
+.mobile-nav {
+  display: none;
+}
+
+.mobile-nav__checkbox {
+  display: none;
+}
+
+.mobile-nav__button {
+  display: block;
+  position: absolute;
+  width: 5rem;
+  height: 5rem;
+  top: 3rem;
+  right: 3rem;
+  z-index: 1000;
+}
+
+.mobile-nav__icon {
+  position: absolute;
+  display: block;
+  width: 2.6rem;
+  height: 2px;
+  background-color: var(--pink);
+  z-index: 400;
+  left: 25%;
+  top: 25%;
+}
+
+.mobile-nav__icon:nth-child(1) {
+  top: 33px;
+}
+
+.mobile-nav__icon:nth-child(3) {
+  top: 23px;
+}
+
+.mobile-nav__nav {
+  padding: 3rem 1.5rem;
+  height: 100vh;
+  width: 100%;
+  background-color: var(--primary-color);
+  color: #fff;
+  transform: translateX(100%);
+  transition-duration: .5s;
+  transition-property: transform;
+  position: fixed;
+  z-index: 200;
+}
+
+.mobile-nav__list {
+  list-style: none;
+  transform-origin: left top;
+  transform: scale(0);
+  transition-property: opacity,transform;
+  transition-duration: .5s;
+  transition-delay: .4s;
+}
+
+.mobile-nav__item {
+  padding: 1rem 1.8rem;
+  line-height: 1.6;
+}
+
+.mobile-nav__link {
+  display: block;
+  color: #fff;
+  font-size: 2.4rem;
+  text-decoration: none;
+}
+
+.mobile-nav__social {
+  height: 6rem;
+  width: 6rem;
+}
+
+.mobile-nav__checkbox:checked ~ .mobile-nav__nav {
+  transform: translateX(0%);
+}
+
+.mobile-nav__checkbox:checked ~ .mobile-nav__nav .mobile-nav__list {
+  transform: scale(1);
+}
+
 .socials {
   display: flex;
   list-style: none;
@@ -271,7 +355,17 @@ body {
 }
 
 
-.stack__icon {
+svg {
   width: -webkit-fill-available;
   fill: var(--color-grey-light);
+}
+
+@media only screen and (max-width: 768px) {
+  .mobile-nav {
+    display: block;
+  }
+
+  .navihation__list {
+    display: none;
+  }
 }
