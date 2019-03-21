@@ -343,12 +343,41 @@ body {
 .stack {
   grid-column: 1 / -1;
 
-  display: grid;
-  grid-gap: 1rem;
-  grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
-
-  padding: 10rem 0;
+  padding: 7rem 0;
   background-color: var(--primary-color-light);
+}
+
+.stack__heading {
+  color: #fff;
+  text-align: center;
+  font-size: 2.4rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.stack__heading::after {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 70%;
+  margin: 2rem auto;
+  margin-bottom: 4rem;
+  opacity: 0.1;
+  background-image: linear-gradient(10deg,rgba(255,255,255,0) 0,#fff 5%,#fff 90%,rgba(255,255,255,0) 100%);
+}
+
+.stack__list {
+  padding: 1rem;
+  display: grid;
+  grid-column-gap: 1rem;
+  grid-row-gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(10rem, 15rem));
+  justify-content: center;
+  justify-items: center;
+}
+
+.stack__frontend {
+  margin-bottom: 4rem;
 }
 
 .project {
@@ -357,9 +386,11 @@ body {
 }
 
 
-svg {
+.stack__icon {
   width: -webkit-fill-available;
   fill: var(--color-grey-light);
+  height: 10rem;
+  width: 10rem;
 }
 
 @media only screen and (max-width: 768px) {
@@ -369,5 +400,13 @@ svg {
 
   .navihation__list {
     display: none;
+  }
+
+  .stack {
+    padding: 3rem 0;
+  }
+
+  .stack__heading::after {
+    margin-bottom: 2rem;
   }
 }
