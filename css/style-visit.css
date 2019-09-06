@@ -32,7 +32,11 @@ a {
   position: relative;
   min-height: 100vh;
   background-color: #5f45bb;
-  background-image: linear-gradient(to bottom right, #180cac, #d054e4),
+  background-image: linear-gradient(
+      to bottom right,
+      rgba(170, 170, 170, 0.7),
+      rgba(89, 96, 109, 0.9)
+    ),
     url(../img/austria.jpg);
   background-size: cover;
   background-position: center;
@@ -181,7 +185,7 @@ svg {
 @media screen and (min-width: 800px) {
   .content {
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
     padding: 64px;
   }
 
