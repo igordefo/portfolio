@@ -36,14 +36,25 @@ section {
   padding: 7rem 4%;
 }
 
-.mb-sm {margin-bottom: 2rem;}
-.mb-md {margin-bottom: 3rem;}
-.mb-lg {margin-bottom: 4rem;}
-.mb-hg {margin-bottom: 8rem;}
+.mb-sm {
+  margin-bottom: 2rem;
+}
+.mb-md {
+  margin-bottom: 3rem;
+}
+.mb-lg {
+  margin-bottom: 4rem;
+}
+.mb-hg {
+  margin-bottom: 8rem;
+}
 
 .container {
   display: grid;
-  grid-template-columns: 1fr [center-start] repeat(8, minmax(min-content, 15rem)) [center-end] 1fr;
+  grid-template-columns: 1fr [center-start] repeat(
+      8,
+      minmax(min-content, 15rem)
+    ) [center-end] 1fr;
   grid-template-rows: 95vh;
 }
 
@@ -54,9 +65,13 @@ section {
   grid-row: 1 / span 1;
 }
 .hero-wrap-bg {
-  background-image: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), url(../img/background.webp);
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0.6),
+      rgba(255, 255, 255, 0.6)
+    ),
+    url(../img/background.webp);
   background-size: cover;
-  animation-delay: .5s;
+  animation-delay: 0.5s;
   animation-duration: 2s;
   animation-fill-mode: both;
   animation-name: fadeInOpacity;
@@ -64,7 +79,7 @@ section {
   background-size: cover;
   bottom: -5vh;
   left: 0;
-  opacity: .15;
+  opacity: 0.15;
   position: absolute;
   right: 0;
   top: 0;
@@ -75,15 +90,15 @@ section {
 
 @keyframes fadeInOpacity {
   0% {
-      opacity: 0;
+    opacity: 0;
   }
   100% {
-      opacity: 1;
+    opacity: 1;
   }
 }
 
 .fadeInDown {
-  animation-duration: .7s;
+  animation-duration: 0.7s;
   animation-fill-mode: both;
   animation-name: fadeInDown;
   animation-delay: 1s;
@@ -96,9 +111,9 @@ section {
     transform: translateY(-20px);
   }
   100% {
-      opacity: 1;
-      -webkit-transform: translateY(0);
-      transform: translateY(0);
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
   }
 }
 
@@ -112,7 +127,6 @@ section {
   height: 95vh;
 }
 
-
 .logo {
   display: block;
   margin-right: auto;
@@ -121,7 +135,7 @@ section {
   background-image: url(../img/logo.png);
   background-position: center;
   background-size: 185%;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
   flex: 0 0 auto;
 }
 
@@ -141,7 +155,7 @@ section {
 }
 
 .navigation__link {
-  padding: .8rem 0;
+  padding: 0.8rem 0;
   text-transform: uppercase;
   text-decoration: none;
   font-weight: 700;
@@ -150,7 +164,7 @@ section {
 }
 
 .navigation__link::before {
-  content: "";
+  content: '';
   position: absolute;
   width: 100%;
   height: 2px;
@@ -210,7 +224,7 @@ section {
   color: #fff;
   transform: translateX(100%);
   transform-origin: right;
-  transition-duration: .5s;
+  transition-duration: 0.5s;
   transition-property: transform;
   position: fixed;
   opacity: 0;
@@ -221,9 +235,9 @@ section {
   list-style: none;
   transform-origin: left top;
   transform: scale(0);
-  transition-property: opacity,transform;
-  transition-duration: .5s;
-  transition-delay: .4s;
+  transition-property: opacity, transform;
+  transition-duration: 0.5s;
+  transition-delay: 0.4s;
 }
 
 .mobile-nav__item {
@@ -276,7 +290,7 @@ section {
   background-color: #fff;
   border-radius: 50%;
   display: inline-block;
-  transition: all .4s ease;
+  transition: all 0.4s ease;
 }
 
 .social__item:not(:last-child) {
@@ -293,16 +307,17 @@ section {
 
 .hero__avatar {
   border-radius: 100%;
-  border: 7px solid rgba(210,54,105, 0.4);
-  box-shadow: 0 0 1px 11px rgba(210,54,105, 0.2), 0 0 1px 22px rgba(210,54,105,.1);
+  border: 7px solid rgba(210, 54, 105, 0.4);
+  box-shadow: 0 0 1px 11px rgba(210, 54, 105, 0.2),
+    0 0 1px 22px rgba(210, 54, 105, 0.1);
 }
 
 .btn {
   -ms-flex-item-align: start;
-      -ms-grid-row-align: start;
-      align-self: start;
+  -ms-grid-row-align: start;
+  align-self: start;
   -ms-grid-column-align: center;
-      justify-self: center;
+  justify-self: center;
   display: inline-block;
   vertical-align: top;
   padding: 10px 15px;
@@ -313,12 +328,26 @@ section {
   text-decoration: none;
   font-weight: 400;
   border: none;
-  background: -webkit-gradient(linear, left top, left bottom, from(var(--pink-light)), to(var(--pink)));
-  background: -webkit-linear-gradient(top, var(--pink-light) 0%, var(--pink) 100%);
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(var(--pink-light)),
+    to(var(--pink))
+  );
+  background: -webkit-linear-gradient(
+    top,
+    var(--pink-light) 0%,
+    var(--pink) 100%
+  );
   background: -o-linear-gradient(top, var(--pink-light) 0%, var(--pink) 100%);
-  background: linear-gradient(to bottom, var(--pink-light) 0%, var(--pink) 100%);
+  background: linear-gradient(
+    to bottom,
+    var(--pink-light) 0%,
+    var(--pink) 100%
+  );
   -webkit-box-shadow: 0 2px 2px 0 rgba(108, 25, 52, 0.64);
-          box-shadow: 0 2px 2px 0 rgba(108, 25, 52, 0.64);
+  box-shadow: 0 2px 2px 0 rgba(108, 25, 52, 0.64);
   border-radius: 22px;
   text-align: center;
   cursor: pointer;
@@ -329,21 +358,33 @@ section {
 
 .btn:hover,
 .btn:focus {
-  background: -webkit-gradient(linear, left top, left bottom, from(#ee8bac), to(#f16191));
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(#ee8bac),
+    to(#f16191)
+  );
   background: -webkit-linear-gradient(top, #ee8bac 0%, #f16191 100%);
   background: -o-linear-gradient(top, #ee8bac 0%, #f16191 100%);
   background: linear-gradient(to bottom, #ee8bac 0%, #f16191 100%);
   -webkit-box-shadow: 0 1px 2px 0 rgba(129, 29, 62, 1);
-          box-shadow: 0 1px 2px 0 rgba(129, 29, 62, 1);
+  box-shadow: 0 1px 2px 0 rgba(129, 29, 62, 1);
 }
 
 .btn:active {
-  background: -webkit-gradient(linear, left top, left bottom, from(#b72a59), to(#d02f65));
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(#b72a59),
+    to(#d02f65)
+  );
   background: -webkit-linear-gradient(top, #b72a59 0%, #d02f65 100%);
   background: -o-linear-gradient(top, #b72a59 0%, #d02f65 100%);
   background: linear-gradient(to bottom, #b72a59 0%, #d02f65 100%);
   -webkit-box-shadow: inset 0 2px 2px 0 rgba(129, 29, 62, 1);
-          box-shadow: inset 0 2px 2px 0 rgba(129, 29, 62, 1);
+  box-shadow: inset 0 2px 2px 0 rgba(129, 29, 62, 1);
 }
 
 .stack {
@@ -361,14 +402,20 @@ section {
 }
 
 .heading::after {
-  content: "";
+  content: '';
   display: block;
   height: 2px;
   width: 70%;
   margin: 2rem auto;
   margin-bottom: 4rem;
   opacity: 0.1;
-  background-image: linear-gradient(10deg,rgba(255,255,255,0) 0,#fff 5%,#fff 90%,rgba(255,255,255,0) 100%);
+  background-image: linear-gradient(
+    10deg,
+    rgba(255, 255, 255, 0) 0,
+    #fff 5%,
+    #fff 90%,
+    rgba(255, 255, 255, 0) 100%
+  );
 }
 
 .heading--dark {
@@ -394,7 +441,6 @@ section {
   background-color: beige;
 }
 
-
 .stack__icon {
   width: -webkit-fill-available;
   fill: var(--color-grey-light);
@@ -409,17 +455,29 @@ section {
 .projects__list {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-gap: 2rem;
+  grid-gap: 4rem;
   align-items: start;
-
+  pointer-events: none;
   list-style: none;
+  transition: all 0.5s ease-in-out;
+}
 
+.projects__list > * {
+  pointer-events: auto;
+  transition: all 0.5s ease-in-out;
 }
 
 .projects__link {
   display: block;
   position: relative;
   overflow: hidden;
+  transition: all 0.5s ease-in-out;
+  border-radius: 5px;
+}
+
+.projects__list:hover > *:hover {
+  transform: scale(1.1);
+  opacity: 1;
 }
 
 .projects__link:hover::after {
@@ -430,11 +488,11 @@ section {
 .projects__link:hover .project__image {
   filter: blur(8px) grayscale(60%);
   z-index: -1;
-  transition: all .1s ease-in-out .2s;
+  transition: all 0.1s ease-in-out 0.2s;
 }
 
 .projects__link::after {
-  content: "";
+  content: '';
   margin: -20px;
   position: absolute;
   top: 0;
@@ -445,11 +503,11 @@ section {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  -webkit-box-shadow: inset 0 0 0 3000px rgba(58,67,81,.5);
-  box-shadow: inset 0 0 0 3000px rgba(58,67,81,.5);
+  -webkit-box-shadow: inset 0 0 0 3000px rgba(58, 67, 81, 0.5);
+  box-shadow: inset 0 0 0 3000px rgba(58, 67, 81, 0.5);
   opacity: 0;
-  -webkit-transition: opacity 600ms ease-in-out .2s;
-  transition: opacity 600ms ease-in-out .2s;
+  -webkit-transition: opacity 600ms ease-in-out 0.2s;
+  transition: opacity 600ms ease-in-out 0.2s;
   -webkit-filter: blur(8px) grayscale(60%);
   filter: blur(8px) grayscale(60%);
 }
@@ -457,7 +515,6 @@ section {
 .project__image {
   max-width: 100%;
 }
-
 
 @media only screen and (max-width: 768px) {
   .mobile-nav {
@@ -490,6 +547,4 @@ section {
   .stack__list {
     grid-template-columns: repeat(3, 1fr);
   }
-
-
 }
